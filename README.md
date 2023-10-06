@@ -5,7 +5,7 @@ This repo is created to include the supporting material for the TUBİTAK project
 
 You can load problems and solve them using the algorithms provided.
 
-First, run the main script `MODO.jl`. After that, load the problem using the data structures provided. Code works the formats given in `txt` folder for each problem set.
+First, run the main script `MODO.jl`. After that, load the problem using the data structures provided. Code works with the formats given in `txt` folder for each problem set.
 
 ```
 include("MODO.jl")
@@ -17,6 +17,8 @@ $$
 & x_i \in \{0, 1\}
 \end{align*}
 $$
+
+## Knapsack Problem
 ```
 kp = MOKnapsackProblem("Kirlik & Sayın/KP/txt/KP_p-3_n-10_ins-1.txt")
 ```
@@ -28,6 +30,8 @@ $$
 & x_{ij} \in \{0, 1\}
 \end{align*}
 $$
+
+## Assignment Problem
 ```
 ap = MOAssignmentProblem("Kirlik & Sayın/AP/txt/AP_p-3_n-5_ins-1.txt")
 ```
@@ -38,6 +42,8 @@ $$
 & x_i \in \{0, 1\}
 \end{align*}
 $$
+
+## Integer Linear Problem
 ```
 ilp = MOIntegerLinearProblem("Kirlik & Sayın/ILP/txt/ILP_p-3_m-20_n-10_ins-1.txt)
 ```
