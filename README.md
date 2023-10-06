@@ -1,7 +1,7 @@
 # RAMODO
 Reformulation Approaches for Multi-objective Discrete Optimization
 
-This repo is created to include to supporting material for the TUBİTAK project 122M422 - "Reformulation Approaches for Multi-objective Discrete Optimization Problems" and will not be maintained in the future. To solve multiobjective optimization problems, use [MultiObjectiveAlgorithms.jl](https://github.com/jump-dev/MultiObjectiveAlgorithms.jl).
+This repo is created to include the supporting material for the TUBİTAK project 122M422 - "Reformulation Approaches for Multi-objective Discrete Optimization Problems" and will not be maintained in the future. To solve multiobjective optimization problems, use [MultiObjectiveAlgorithms.jl](https://github.com/jump-dev/MultiObjectiveAlgorithms.jl).
 
 You can load problems and solve them using the algorithms provided.
 
