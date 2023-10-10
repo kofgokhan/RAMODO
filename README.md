@@ -10,6 +10,8 @@ First, run the main script `MODO.jl`. After that, load the problem using the dat
 ```
 include("MODO.jl")
 ```
+
+## Knapsack Problem
 $$
 \begin{align*}
 \max & \sum_{i=1}^p v_{i}^k x_i, \quad k=1,...,p \\
@@ -18,11 +20,12 @@ $$
 \end{align*}
 $$
 
-## Knapsack Problem
 ```
 kp = MOKnapsackProblem("Kirlik & Sayın/KP/txt/KP_p-3_n-10_ins-1.txt")
 ```
 $$
+
+## Assignment Problem
 \begin{align*}
 \max & \sum_{i=1}^p c_{ij}^k x_{ij}, & \quad k=1,...,p \\
 \text{s.to:} & \sum_{i=1}^n x_{ij} = 1, & \quad \forall j \in 1,...,n \\
@@ -31,10 +34,11 @@ $$
 \end{align*}
 $$
 
-## Assignment Problem
 ```
 ap = MOAssignmentProblem("Kirlik & Sayın/AP/txt/AP_p-3_n-5_ins-1.txt")
 ```
+
+## Integer Linear Problem
 $$
 \begin{align*}
 \max & \sum_{i=1}^p c_{i}^k x_i, & \quad k=1,...,p \\
@@ -43,7 +47,6 @@ $$
 \end{align*}
 $$
 
-## Integer Linear Problem
 ```
 ilp = MOIntegerLinearProblem("Kirlik & Sayın/ILP/txt/ILP_p-3_m-20_n-10_ins-1.txt)
 ```
@@ -71,7 +74,7 @@ Y_N, _ = tamby(ilp)
 2. Additive Epsilon Indicator ($\varepsilon_+$) `ε₊(Y_R, Y_N)`
 3. Coverage Error `coverage_error(Y_R, Y_N)`
 4. Range Ratio `range_ratio(Y_R, Y_N)`
-5. Hypervolume (see the [link](https://lopez-ibanez.eu/hypervolume) for computing $hv(\mathcal{Y}_R)$)
+5. Hypervolume (see the [link](https://lopez-ibanez.eu/hypervolume) for computing $hv(\mathcal{Y}_R))$
 `hypervolume(Y_R, reference)`
 6. Hypervolume Ratio
 
