@@ -23,9 +23,9 @@ $$
 ```
 kp = MOKnapsackProblem("Kirlik & Sayın/KP/txt/KP_p-3_n-10_ins-1.txt")
 ```
-$$
 
 ## Assignment Problem
+$$
 \begin{align*}
 \max & \sum_{i=1}^p c_{ij}^k x_{ij}, & \quad k=1,...,p \\
 \text{s.to:} & \sum_{i=1}^n x_{ij} = 1, & \quad \forall j \in 1,...,n \\
