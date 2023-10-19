@@ -10,7 +10,7 @@ end
 coverage_error(R::Vector{Vector{Float64}}, N::Vector{Vector{Float64}}) = 
 	coverage_error(transpose(reduce(hcat, R)), transpose(reduce(hcat, N)))
 
-function ε₊(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
+function additive_epsilon_indicator(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
 	r = vec(maximum(N, dims=1) - minimum(N, dims=1))
     return maximum(
 		minimum(
@@ -19,8 +19,8 @@ function ε₊(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
 	)
 end
 
-ε₊(R::Vector{Vector{Float64}}, N::Vector{Vector{Float64}}) = 
-	ε₊(transpose(reduce(hcat, R)), transpose(reduce(hcat, N)))
+additive_epsilon_indicator(R::Vector{Vector{Float64}}, N::Vector{Vector{Float64}}) = 
+	additive_epsilon_indicator(transpose(reduce(hcat, R)), transpose(reduce(hcat, N)))
 
 function range_ratio(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
     rᴿ = (maximum(R, dims=1) - minimum(R, dims=1))
