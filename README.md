@@ -82,5 +82,7 @@ In order to use the function to compute hypervolume, you first need to build a s
  
 ## References
 [1] Kirlik, G., & Sayin, S. (2014). A new algorithm for generating all nondominated solutions of multiobjective discrete optimization problems. European Journal of Operational Research, 232(3), 479–488. https://doi.org/10.1016/j.ejor.2013.08.001
+
 [2] Tamby, S., & Vanderpooten, D. (2021). Enumeration of the nondominated set of multiobjective discrete optimization problems. INFORMS Journal on Computing, 33(1), 72–85. https://doi.org/10.1287/ijoc.2020.0953
+
 [3] Mesquita-Cunha, M., Figueira, J. R., & Barbosa-Póvoa, A. P. (2022). New ϵ−constraint methods for multi-objective integer linear programming: A Pareto front representation approach. European Journal of Operational Research. https://doi.org/10.1016/j.ejor.2022.07.044
