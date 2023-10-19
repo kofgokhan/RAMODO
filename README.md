@@ -71,7 +71,7 @@ Y_N, _ = tamby(ilp)
 `RepresentationMetrics.jl` provides functions for quality measures for representations. They accept the representation and the nondominated set as the arguments. Assuming `Y_R` is the representation somehow obtained, we can compute the following quality metrics:
 
 1. Overall Nondominated Vector Generation Ratio (ONVGR) `ongvr(Y_R, Y_N)`
-2. Additive Epsilon Indicator ($\varepsilon_+$) `ε₊(Y_R, Y_N)`
+2. Additive Epsilon Indicator ($\varepsilon_+$) `additive_epsilon_indicator(Y_R, Y_N)`
 3. Coverage Error `coverage_error(Y_R, Y_N)`
 4. Range Ratio `range_ratio(Y_R, Y_N)`
 5. Hypervolume (see the [link](https://lopez-ibanez.eu/hypervolume) for computing $hv(\mathcal{Y}_R)$
