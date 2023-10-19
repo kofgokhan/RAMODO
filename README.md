@@ -74,7 +74,7 @@ Y_N, _ = tamby(ilp)
 2. Additive Epsilon Indicator ($\varepsilon_+$) `ε₊(Y_R, Y_N)`
 3. Coverage Error `coverage_error(Y_R, Y_N)`
 4. Range Ratio `range_ratio(Y_R, Y_N)`
-5. Hypervolume (see the [link](https://lopez-ibanez.eu/hypervolume) for computing $hv(\mathcal{Y}_R))$
+5. Hypervolume (see the [link](https://lopez-ibanez.eu/hypervolume) for computing $hv(\mathcal{Y}_R)$
 `hypervolume(Y_R, reference)`
 6. Hypervolume Ratio
 
