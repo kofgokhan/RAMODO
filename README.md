@@ -48,10 +48,10 @@ $$
 $$
 
 ```
-ilp = MOIntegerLinearProblem("Kirlik & Sayın/ILP/txt/ILP_p-3_m-20_n-10_ins-1.txt)
+ilp = MOIntegerLinearProblem("Kirlik & Sayın/ILP/txt/ILP_p-3_m-20_n-10_ins-1.txt")
 ```
 
-Now, to solve each problem, just pick an algorithm and run it. Note that Kirlik & Sayın also expect an objective funtion index to build two-stage $\varepsilon$-constraint models. Each function also returns statistics about the runs.
+Now, to solve each problem, just pick an algorithm and run it. Note that Kirlik & Sayın also expects an objective function index to build two-stage $\varepsilon$-constraint models. Each function also returns statistics about the runs.
 
 Kirlik & Sayın (2014):
 ```
@@ -68,7 +68,7 @@ Tamby & vanderpooten (2021):
 Y_N, _ = tamby(ilp)
 ```
 
-`RepresentationMetrics.jl` provides functions for quality measures for representations. They accept the representation and the nondominated set as the arguments. Assuming `Y_R` is the representation somehow obtained, we can compute the following quality metrics:
+`RepresentationMetrics.jl` provides functions to compute quality measures for representations. They accept the representation and the nondominated set as the arguments. Assuming `Y_R` is a representation, we can compute the following quality metrics:
 
 1. Overall Nondominated Vector Generation Ratio (ONVGR) `ongvr(Y_R, Y_N)`
 2. Additive Epsilon Indicator ($\varepsilon_+$) `additive_epsilon_indicator(Y_R, Y_N)`
