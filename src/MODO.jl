@@ -114,7 +114,7 @@ end
 function build_model(problem::MOIntegerLinearProblem)
 	model = Model(optimizer_with_attributes(HiGHS.Optimizer))
     set_optimizer_attribute(model, MOI.Silent(), true)
-	@variable(model, x[1:problem.n], Bin)
+	@variable(model, x[1:problem.n] >= 0)
 	@constraint(model, [r = 1:problem.m], sum(problem.a[r,:] .* x) ≤ problem.b[r])
 	@expression(model, f[j = 1:problem.p], sum(-problem.c[j,:] .* x))
 	return model, x, f
