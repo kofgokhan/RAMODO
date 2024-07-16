@@ -87,6 +87,6 @@ In order to use the function to compute hypervolume, you first need to build a s
 
 [3] Mesquita-Cunha, M., Figueira, J. R., & Barbosa-Póvoa, A. P. (2022). New ϵ−constraint methods for multi-objective integer linear programming: A Pareto front representation approach. European Journal of Operational Research. https://doi.org/10.1016/j.ejor.2022.07.044
 
-[4] C. M. Fonseca, L. Paquete and M. Lopez-Ibanez, "An Improved Dimension-Sweep Algorithm for the Hypervolume Indicator," 2006 IEEE International Conference on Evolutionary Computation, Vancouver, BC, Canada, 2006, pp. 1157-1163, doi: 10.1109/CEC.2006.1688440. keywords: {Power measurement;Algorithm design and analysis;Computational geometry},
+[4] C. M. Fonseca, L. Paquete and M. Lopez-Ibanez, "An Improved Dimension-Sweep Algorithm for the Hypervolume Indicator," 2006 IEEE International Conference on Evolutionary Computation, Vancouver, BC, Canada, 2006, pp. 1157-1163, doi: 10.1109/CEC.2006.1688440.
 
 [5] Angel Dominguez-Rios, M., Chicano, F., and Alba, E. (2021). Effective anytime algorithm for multiobjective combinatorial optimization problems. Information Sciences, 565:210–228.
