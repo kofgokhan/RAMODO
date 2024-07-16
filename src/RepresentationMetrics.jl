@@ -1,3 +1,5 @@
+using Statistics
+
 function coverage_error(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
 	r = vec(maximum(N, dims=1) - minimum(N, dims=1))
     return maximum(
@@ -25,7 +27,7 @@ additive_epsilon_indicator(R::Vector{Vector{Float64}}, N::Vector{Vector{Float64}
 function range_ratio(R::AbstractMatrix{Float64}, N::AbstractMatrix{Float64})
     rᴿ = (maximum(R, dims=1) - minimum(R, dims=1))
     rᴺ = (maximum(N, dims=1) - minimum(N, dims=1))
-    return maximum(rᴿ ./ rᴺ)
+    return mean(rᴿ ./ rᴺ)
 end
 
 range_ratio(R::Vector{Vector{Float64}}, N::Vector{Vector{Float64}}) = 
